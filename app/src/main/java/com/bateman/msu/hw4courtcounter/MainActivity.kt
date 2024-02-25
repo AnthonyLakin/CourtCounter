@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "Got a OtherView: $otherView")
 
         //When application runs always get the score
-        displayForTeamA(otherView.getScoreB)
-        displayForTeamB(otherView.getScoreA)
+        displayForTeamA(otherView.getScoreA)
+        displayForTeamB(otherView.getScoreB)
     }
 
     /**
@@ -80,8 +80,8 @@ class MainActivity : AppCompatActivity() {
      */
     fun resetScore(v: View?) {
         otherView.resetAll()
-        displayForTeamA(otherView.getScoreB)
-        displayForTeamB(otherView.getScoreA)
+        displayForTeamA(otherView.getScoreA)
+        displayForTeamB(otherView.getScoreB)
     }
 
     /**
